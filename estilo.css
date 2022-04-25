@@ -85,17 +85,43 @@ body{
     font-size:large;
     font-weight: 600;
 }
+
+/* NAV ANIMADO */
+
 .nav ul li a{
     text-decoration: none;
     color:  #d4bf97;
+    position: relative;
+    padding: 0 0 5px 0;
 }
 .nav ul li a:hover{
     color: rgb(255, 255, 255);
+    /* border-bottom: solid #d4bf97; */
 }
+
+.nav ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-out;
+}
+
+.nav ul li a:hover::before{
+    width:100%
+}
+
+/* LINK ACTIVE */
+
 ul li a.linkActive{
-border-bottom: solid #d4bf97;
-line-height: 15px;
+    color: white;
+/* border-bottom: solid #d4bf97; */
+/* line-height: 15px; */
 }
+
 
 /* INDEX */
 
