@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Varta:wght@400;700&display=swap" rel="stylesheet">
     <link rel="sortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title class="titulo">T3OQ | Contacto</title>
 </head>
 <body>
@@ -30,12 +31,12 @@
     </header>
     <!-- <main> -->
         <section class="sectionContacto">
-            <div class="sectionContacto__contacto">
+            <div class="sectionContacto__contacto" data-aos="fade-right">
                 <h2>Contacto</h2><br>
                 <h3>thethreeofquarantineok@gmail.com</h3>
                 <h3>1161807627</h3>
             </div>
-            <div class="form">
+            <div class="form" data-aos="fade-left">
                 <form action="enviar.php" method="post" enctype="text/plain">
                         <label for="nombre" class="form__label">Nombre</label><br>
                         <input type="text" name="nombre" required class="form__input">
@@ -67,5 +68,9 @@
     </footer>
     </div>
     <script src="https://kit.fontawesome.com/4bf6ffe6f6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
