@@ -154,8 +154,8 @@ ul li a.linkActive{
     width: 100%;
     max-width: 300px;
     border-radius: 5%;
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* section 2 - index*/
@@ -188,6 +188,7 @@ ul li a.linkActive{
     color: black;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +217,7 @@ ul li a.linkActive{
     "section3index__iframe section3index__parrafo";
 }
 .section3index__iframe{
-    grid-template-areas: section3index__iframe;
+    grid-area: section3index__iframe;
 }
 .section3index__parrafo{
     grid-area: section3index__parrafo;
@@ -224,10 +225,13 @@ ul li a.linkActive{
 
 .section3index__iframe{
     margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .section3index__parrafo{
     color: #d4bf97;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -1237,7 +1241,7 @@ header label:hover{
         display: grid;
         justify-content: space-around;
         background-color: black;
-        /* padding: 50px 50px 100px 50px; */
+        padding: 50px 50px 100px 50px;
     }
     .section1index{
         grid-template-areas:
